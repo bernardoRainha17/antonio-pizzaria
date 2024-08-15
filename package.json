@@ -1,0 +1,11 @@
+{
+  "name": "antonio-pizzaria",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "parcel-bundler": "^1.6.1"
+  },
+  "type": "module",
+  "scripts": {},
+  "devDependencies": {}
+}

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="english">
+
+<head>
+  <title>Antonio Pizzaria</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+    data-tag="font" />
+
+  <link href="./assets/css/index.css" rel="stylesheet" />
+</head>
+
+<body onload="choseLanguage()">
+  <div>
+    <div class="page-container">
+      <div class="page-page">
+        <div class="page-top-bar">
+          <div class="page-content">
+            <img src="assets/img/logo.jpeg" class="logo-img" />
+            <span id="menu" class="name-restaurant">Antonio Pizzaria Menu</span>
+          </div>
+        </div>
+        <div class="page-selection">
+          <span id="language-selection" class="language">Language Selection</span>
+          <div class="language-chipgroup">
+            <div class="language-chip" onclick="changeLanguage('en')">
+              <span class="languages-chosen">English</span>
+            </div>
+            <div class="language-chip" onclick="changeLanguage('pt')">
+              <span class="languages-chosen">Portuguese</span>
+            </div>
+            <div class="language-chip" onclick="changeLanguage('fn')">
+              <span class="languages-chosen">Finnish</span>
+            </div>
+          </div>
+        </div>
+        <div class="page-list">
+          <div class="page-section-title">
+            <div class="title-products">
+              <span>Pizzas</span>
+            </div>
+          </div>
+          <div class="page-item">
+            <div class="page-frame">
+              <span class="item-icon">🍕</span>
+            </div>
+            <div class="item-specifier">
+              <span class="food-topic">Margherita</span>
+              <span id="margherita-igredients" class="food-ingredients">Tomato, Mozzarella, Basil</span>
+
+            </div>
+            <span class="price-tag">R$20</span>
+          </div>
+          <div class="page-item">
+            <div class="page-frame">
+              <span class="item-icon">🍕</span>
+            </div>
+            <div class="item-specifier">
+              <span class="food-topic">Pepperoni</span>
+              <span id="pepperoni-igredients" class="food-ingredients">Pepperoni, Mozzarella, Tomato Sauce</span>
+            </div>
+            <span class="price-tag">R$22</span>
+          </div>
+          <div class="page-item">
+            <div class="page-frame">
+              <span class="item-icon">🍕</span>
+            </div>
+            <div class="item-specifier">
+              <span id="vegetarian-id" class="food-topic">Vegetarian</span>
+              <span id="vegetarian-igredients" class="food-ingredients">Mixed Vegetables, Mozzarella</span>
+            </div>
+            <span class="price-tag">R$25</span>
+          </div>
+          <div class="page-item">
+            <div class="page-frame">
+              <span class="item-icon">🍕</span>
+            </div>
+            <div class="item-specifier">
+              <span id="portuguese-id" class="food-topic">Portuguese</span>
+              <span id="portuguese-igredients" class="food-ingredients">Mixed Vegetables, Eggs, Ham and olive</span>
+            </div>
+            <span class="price-tag">R$20</span>
+          </div>
+          <div class="page-item">
+            <div class="page-frame">
+              <span class="item-icon">🍕</span>
+            </div>
+            <div class="item-specifier">
+              <span id="chicken-id" class="food-topic">BBQ Chicken</span>
+              <span id="chicken-igredients" class="food-ingredients">Tomato, shredded chicken, home BBQ sauce</span>
+            </div>
+            <span class="price-tag">R$19</span>
+          </div>
+          <div class="page-item">
+            <div class="page-frame">
+              <span class="item-icon">🍕</span>
+            </div>
+            <div class="item-specifier">
+              <span id="pineapple-id" class="food-topic">Pineapple</span>
+              <span id="pineapple-igredients" class="food-ingredients">Pineapples, vegan cheese with sweet sauce</span>
+            </div>
+            <span class="price-tag">R$19</span>
+          </div>
+        </div>
+        <div class="page-list">
+          <div class="page-section-title">
+            <div class="sections-split">
+              <span id="dessert-pizzas" class="title-paragraph">Dessert Pizzas</span>
+            </div>
+          </div>
+          <div class="page-item">
+            <div class="page-frame">
+              <span class="item-icon">🍰</span>
+            </div>
+            <div class="item-specifier">
+              <span id="nutella-id" class="food-topic">Nutella version</span>
+              <span id="nutella-ingredients" class="food-ingredients">Nutella, Strawberries, Almonds</span>
+            </div>
+            <span class="price-tag">R$8</span>
+          </div>
+          <div class="page-item">
+            <div class="page-frame">
+              <span class="item-icon">🍰</span>
+            </div>
+            <div class="item-specifier">
+              <span id="banana-id" class="food-topic">Banana Caramel</span>
+              <span id="banana-ingredients" class="food-ingredients">Banana, Caramel Drizzle, Chocolate</span>
+            </div>
+            <span class="price-tag">R$9</span>
+          </div>
+          <div class="page-item">
+            <div class="page-frame">
+              <span class="item-icon">🍰</span>
+            </div>
+            <div class="item-specifier">
+              <span id="apple-id" class="food-topic">Apple Crisp</span>
+              <span id="apple-ingredients" class="food-ingredients">Apple Slices, Cinnamon, Crumble</span>
+            </div>
+            <span class="price-tag">R$9</span>
+          </div>
+        </div>
+        <div class="page-list">
+          <div class="page-section-title">
+            <div class="sections_split">
+              <span id="drinks" class="title-paragraph">Drinks</span>
+            </div>
+          </div>
+          <div class="page-item">
+            <div class="page-frame">
+              <span class="item-icon">🥤</span>
+            </div>
+            <div class="item-specifier">
+              <span id="soda-id" class="food-topic">Soda</span>
+            </div>
+            <span class="price-tag">R$4</span>
+          </div>
+          <div class="page-item">
+            <div class="page-frame">
+              <span class="item-icon">🥤</span>
+            </div>
+            <div class="item-specifier">
+              <span id="orange-id" class="food-topic">Orange Juice</span>
+            </div>
+            <span class="price-tag">R$5.5</span>
+          </div>
+          <div class="page-item">
+            <div class="page-frame">
+              <span class="item-icon">🥤</span>
+            </div>
+            <div class="item-specifier">
+              <span id="tea-id" class="food-topic">Iced Tea</span>
+            </div>
+            <span class="price-tag">R$2.5</span>
+          </div>
+          <div class="page-item">
+            <div class="page-frame">
+              <span class="item-icon">🥤</span>
+            </div>
+            <div class="item-specifier">
+              <span id="lemonade-id" class="food-topic">Lemonade</span>
+            </div>
+            <span class="price-tag">R$5</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<footer>
+  <script type="module">
+    import { choseLanguage, changeLanguage } from "./assets/js/index.js";
+    window.choseLanguage = choseLanguage;
+    window.changeLanguage = changeLanguage;
+  </script>
+  
+</footer>
+
+</html>
