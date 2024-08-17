@@ -70,7 +70,7 @@ export const translate = {
         "TomatoshreddedchickenhomeBBQsauce":"Tomaatti, silputtu kana, koti-BBQ-kastike",
         "Pineapple":"Ananas",
         "Pineapplesvegancheesewithsweetsauce":"Ananas, vegaaninen juusto makealla kastikkeella",
-        "DessertPizzas":"Jälkiruoka pizzat",
+        "DessertPizzas":"Jälkiruoka pizzas",
         "Nutellaversion":"Nutella versio",
         "NutellaStrawberriesAlmonds":"Nutella, mansikat, mantelit",
         "BananaCaramel":"Banaanikaramelli",
